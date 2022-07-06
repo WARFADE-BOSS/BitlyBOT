@@ -1,0 +1,26 @@
+{
+    "name": "Bitly Link Shortener",
+    "description": "Bot That Can Generate Bitly Short Links",
+    "repository": "https://github.com/WARFADE-BOSS/BitlyBot",
+    "keywords": ["Bitly", "pyrogram", "telegram bot"],
+    "env": {
+        "TOKEN": {
+            "description": "Bot Token"
+        },
+        "API_ID": {
+            "description": "API_ID"
+        },
+        "API_HASH": {
+            "description": "API_HASH"
+        },
+        "BITLY_TOKEN":{
+            "description": "BITLY_TOKEN. You Can Get One From https://bitly.is/accesstoken"
+        
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
