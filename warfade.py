@@ -18,7 +18,7 @@ app = Client("bitlybot" ,bot_token = TOKEN ,api_id = API_ID ,api_hash = API_HASH
 
 @app.on_message(filters.private & filters.command(['start']))
 async def start(client,message):
-  await message.reply_text(f"**Hey {message .from_user.first_name},**\n\nWelcome to WarFade's Link Shortner Bot. \n\n**Send Any Link That You Want To Shorten**\n\nMade With ♥️ By @WarFade", reply_to_message_id = message.message_id)
+  await message.reply_text(f"**Hey {message .from_user.first_name},**\n\n**Send Any Link That You Want To Shorten**\n\n_**__Made With ♥️ By @WarFade__**_", reply_to_message_id = message.message_id)
   
 @app.on_message(filters.private & filters.regex("http|https"))
 async def Bitly(client,message):
